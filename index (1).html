@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabLaa Beauty | Cosmétiques et accessoires</title>
+<meta name="description" content="TabLaa Beauty : cosmétiques et accessoires. Commandez par appel ou WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141414;--orange:#F28C28;--blush:#FBEDE6;--paper:#FFFBF8;--muted:#6b5f58}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;gap:12px}
+.logo{width:64px;height:64px;border-radius:50%;background:var(--ink);border:3px solid var(--orange);display:grid;place-items:center;text-align:center;line-height:1.05;flex:none}
+.logo b{display:block;font-weight:800;font-size:13px;letter-spacing:.06em}
+.logo span{display:block;font-size:11px;color:var(--orange)}
+nav a{text-decoration:none;margin-left:18px;font-size:15px}
+nav a:hover{color:var(--orange)}
+.hero{background:var(--blush);padding:64px 0 56px}
+.hero h1{font-size:clamp(2rem,6vw,3.6rem);font-weight:800;line-height:1.1;max-width:16em}
+.hero p{margin:16px 0 28px;color:var(--muted);max-width:32em;font-size:1.1rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+.btn.main:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.alt:hover{background:var(--ink);color:#fff}
+section{padding:56px 0}
+h2{font-size:1.8rem;font-weight:800;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.item{background:#fff;border:1px solid #eadcd3;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.ph{aspect-ratio:1;border-radius:10px;background:var(--blush);display:grid;place-items:center;color:var(--muted);font-size:.9rem;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.item h3{font-size:1.05rem}
+.item .btn{padding:9px 14px;text-align:center;font-size:.95rem}
+.order{background:var(--ink);color:#fff;border-radius:18px;padding:36px 28px}
+.order p{margin:8px 0 22px;color:#e8ddd6}
+.order .btn.alt{border-color:#fff;color:#fff}
+.order .btn.alt:hover{background:#fff;color:var(--ink)}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+@media (max-width:520px){nav a{margin-left:12px;font-size:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo" role="img" aria-label="TabLaa Beauty"><div><b>TABLA</b><span>Beauty</span></div></div>
+    <nav>
+      <a href="#produits">Produits</a>
+      <a href="#commander">Commander</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Cosmétiques et accessoires pour prendre soin de vous</h1>
+      <p>Choisissez vos produits, puis commandez en un appel ou un message WhatsApp.</p>
+      <div class="btns">
+        <a class="btn main" href="tel:+213655450745">Appeler pour commander</a>
+        <a class="btn alt" href="https://wa.me/213655450745" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="produits">
+    <div class="wrap">
+      <h2>Nos produits</h2>
+      <!-- Pour ajouter un produit : copiez un bloc <article class="item"> ... </article>.
+           Pour mettre une photo : remplacez le texte dans <div class="ph"> par
+           <img src="images/nom-photo.jpg" alt="Nom du produit"> -->
+      <div class="grid">
+        <article class="item">
+          <div class="ph">Photo du produit</div>
+          <h3>Cosmétique 1</h3>
+          <a class="btn alt" href="https://wa.me/213655450745?text=Bonjour%2C%20je%20veux%20commander%20%3A%20Cosm%C3%A9tique%201" target="_blank" rel="noopener">Commander</a>
+        </article>
+        <article class="item">
+          <div class="ph">Photo du produit</div>
+          <h3>Cosmétique 2</h3>
+          <a class="btn alt" href="https://wa.me/213655450745?text=Bonjour%2C%20je%20veux%20commander%20%3A%20Cosm%C3%A9tique%202" target="_blank" rel="noopener">Commander</a>
+        </article>
+        <article class="item">
+          <div class="ph">Photo du produit</div>
+          <h3>Accessoire 1</h3>
+          <a class="btn alt" href="https://wa.me/213655450745?text=Bonjour%2C%20je%20veux%20commander%20%3A%20Accessoire%201" target="_blank" rel="noopener">Commander</a>
+        </article>
+        <article class="item">
+          <div class="ph">Photo du produit</div>
+          <h3>Accessoire 2</h3>
+          <a class="btn alt" href="https://wa.me/213655450745?text=Bonjour%2C%20je%20veux%20commander%20%3A%20Accessoire%202" target="_blank" rel="noopener">Commander</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="commander">
+    <div class="wrap">
+      <div class="order">
+        <h2>Commander</h2>
+        <p>Appelez-nous ou écrivez-nous sur WhatsApp au 0655 45 07 45. Dites-nous quel produit vous voulez et votre adresse de livraison.</p>
+        <div class="btns">
+          <a class="btn main" href="tel:+213655450745">Appeler</a>
+          <a class="btn alt" href="https://wa.me/213655450745" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn alt" href="https://www.instagram.com/Tablaa_Beauty" target="_blank" rel="noopener">Instagram @Tablaa_Beauty</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© TabLaa Beauty</div>
+</footer>
+
+</body>
+</html>
